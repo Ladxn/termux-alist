@@ -17,7 +17,7 @@ termux_step_make() {
 	termux_setup_golang
 
 	# Get alist-web:
-	wget https://github.com/alist-org/web-v2/releases/download/2.6.0/dist.tar.gz
+	wget https://github.com/alist-org/web-v2/releases/download/2.6.4/dist.tar.gz
 	tar -zxvf dist.tar.gz
 	rm -f dist.tar.gz
 	sed -ri 's|(lang=")zh-CN"|\1en-US"|g' dist/index.html
